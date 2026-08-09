@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CCSS.css" />
+</head>
+<body>
+    <!-- Shooting Stars Background -->
+    <div class="static-stars"></div>
+    <div class="starfield" id="starfield"></div>
+
+    <div class="container">
+        <div class="calculator-wrapper">
+            <div class="calculator" role="application" aria-label="Calculator">
+                <div class="display">
+                    <div class="expression" id="expressionDisplay"></div>
+                    <div class="result" id="resultDisplay">0</div>
+                </div>
+                <div class="buttons">
+                    <!-- Row 1 -->
+                    <button class="btn btn-clear" data-value="clear" aria-label="Clear">AC</button>
+                    <button class="btn btn-function" data-value="backspace" aria-label="Backspace">⌫</button>
+                    <button class="btn btn-function" data-value="percent" aria-label="Percent">%</button>
+                    <button class="btn btn-operator" data-value="÷">÷</button>
+
+                    <!-- Row 2 -->
+                    <button class="btn" data-value="7">7</button>
+                    <button class="btn" data-value="8">8</button>
+                    <button class="btn" data-value="9">9</button>
+                    <button class="btn btn-operator" data-value="×">×</button>
+
+                    <!-- Row 3 -->
+                    <button class="btn" data-value="4">4</button>
+                    <button class="btn" data-value="5">5</button>
+                    <button class="btn" data-value="6">6</button>
+                    <button class="btn btn-operator" data-value="-">−</button>
+
+                    <!-- Row 4 -->
+                    <button class="btn" data-value="1">1</button>
+                    <button class="btn" data-value="2">2</button>
+                    <button class="btn" data-value="3">3</button>
+                    <button class="btn btn-operator" data-value="+">+</button>
+
+                    <!-- Row 5 -->
+                    <button class="btn btn-zero" data-value="0">0</button>
+                    <button class="btn" data-value=".">.</button>
+                    <button class="btn btn-equals" data-value="=">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Panel -->
+        <div class="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button class="btn-clear-history" id="clearHistory">Clear All</button>
+            </div>
+            <div class="history-list" id="historyList">
+                <div class="history-empty">No calculations yet</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="CCSS.js"></script>
+</body>
+</html>
